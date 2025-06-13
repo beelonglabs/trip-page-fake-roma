@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dream Trip - Destination Rome</title>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Montserrat', Arial, sans-serif;
+      margin: 0;
+      background: #f7fafc;
+      color: #222;
+    }
+    header {
+      background: linear-gradient(90deg, #199C80 0%, #2CE2B8 100%);
+      color: #fff;
+      padding: 32px 0 24px 0;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+      letter-spacing: 2px;
+    }
+    .hero {
+      background: url('https://images.unsplash.com/photo-1509395176047-4a66953fd231?auto=format&fit=crop&w=1200&q=80') center/cover no-repeat;
+      height: 320px;
+      display: flex;
+      align-items: flex-end;
+      justify-content: flex-start;
+      padding: 32px;
+      color: #fff;
+      border-radius: 0 0 24px 24px;
+      box-shadow: 0 4px 16px rgba(25,156,128,0.12);
+    }
+    .hero h2 {
+      background: rgba(25,156,128,0.8);
+      padding: 12px 32px;
+      border-radius: 16px;
+      font-size: 2rem;
+      margin: 0;
+      font-weight: 700;
+    }
+    .container {
+      max-width: 900px;
+      margin: 40px auto;
+      background: #fff;
+      border-radius: 16px;
+      box-shadow: 0 2px 12px rgba(44,226,184,0.08);
+      padding: 32px;
+    }
+    .trip-info {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 32px;
+      margin-bottom: 32px;
+    }
+    .trip-info > div {
+      flex: 1 1 220px;
+      background: #f2fdfb;
+      border-radius: 12px;
+      padding: 24px;
+      box-shadow: 0 1px 4px rgba(25,156,128,0.06);
+      text-align: center;
+    }
+    .trip-info h3 {
+      margin: 0 0 8px 0;
+      color: #199C80;
+      font-size: 1.2rem;
+      font-weight: 700;
+    }
+    .trip-info p {
+      margin: 0;
+      font-size: 1.1rem;
+    }
+    .highlights {
+      margin-bottom: 32px;
+    }
+    .highlights h2 {
+      color: #199C80;
+      font-size: 1.5rem;
+      margin-bottom: 16px;
+    }
+    .highlights ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 24px;
+    }
+    .highlights li {
+      background: #e3fcf7;
+      border-radius: 10px;
+      padding: 16px 24px;
+      font-size: 1.1rem;
+      flex: 1 1 220px;
+      box-shadow: 0 1px 4px rgba(25,156,128,0.04);
+    }
+    .gallery {
+      margin-bottom: 32px;
+    }
+    .gallery h2 {
+      color: #199C80;
+      font-size: 1.5rem;
+      margin-bottom: 16px;
+    }
+    .gallery-images {
+      display: flex;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+    .gallery-images img {
+      width: 220px;
+      height: 140px;
+      object-fit: cover;
+      border-radius: 10px;
+      box-shadow: 0 1px 4px rgba(25,156,128,0.08);
+      transition: transform 0.2s;
+    }
+    .gallery-images img:hover {
+      transform: scale(1.04);
+    }
+    footer {
+      text-align: center;
+      color: #888;
+      font-size: 1rem;
+      padding: 32px 0 16px 0;
+    }
+    @media (max-width: 700px) {
+      .container { padding: 16px; }
+      .trip-info, .highlights ul, .gallery-images { flex-direction: column; gap: 12px; }
+      .gallery-images img { width: 100%; height: 180px; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Dream Trip</h1>
+    <p>Discover Rome with Beelong!</p>
+  </header>
+  <section class="hero">
+    <h2>Rome, Italy</h2>
+  </section>
+  <main class="container">
+    <section class="gallery">
+      <h2>Gallery</h2>
+      <div class="gallery-images">
+        <img src="https://images.unsplash.com/photo-1509395176047-4a66953fd231?auto=format&fit=crop&w=600&q=80" alt="Colosseum">
+        <img src="https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=600&q=80" alt="Vatican">
+        <img src="https://images.unsplash.com/photo-1467269204594-9661b134dd2b?auto=format&fit=crop&w=600&q=80" alt="Trevi Fountain">
+        <img src="https://images.unsplash.com/photo-1511739001486-6bfe10ce785f?auto=format&fit=crop&w=600&q=80" alt="Rome at night">
+      </div>
+    </section>
+  </main>
+  <footer>
+    &copy; 2025 Beelong. Fake page for demonstration.
+  </footer>
+</body>
+</html>
